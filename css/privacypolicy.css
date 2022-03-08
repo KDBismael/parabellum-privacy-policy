@@ -7,7 +7,7 @@
 
 @font-face {
   font-family: Raleway;
-  src: url("./assets/Raleway/Raleway-VariableFont_wght.ttf");
+  src: url("../assets/Raleway/Raleway-VariableFont_wght.ttf");
 }
 
 body {
@@ -17,6 +17,7 @@ body {
 .wrapper {
   height: 100vh;
   width: 95%;
+  min-width: 1000px;
   margin: 0 auto;
   font-family: 'Raleway';
 }
@@ -30,6 +31,17 @@ body {
   font-size: 20px;
   line-height: 23px;
   color: #000000;
+}
+
+.wrapper ul {
+  font-family: 'Raleway';
+  font-size: 20px;
+  line-height: 23px;
+  color: #000000;
+}
+
+.wrapper ul li {
+  margin-top: 0.8rem;
 }
 
 .wrapper .content {
@@ -98,6 +110,7 @@ body {
   font-weight: normal;
   text-align: left;
   margin-bottom: 1.5rem;
+  margin-left: 0.5rem;
   cursor: pointer;
 }
 
@@ -110,6 +123,7 @@ body {
   height: 70vh;
   max-height: 600px;
   overflow-y: scroll;
+  position: relative;
   -ms-overflow-style: none;
   /* IE 11 */
   scrollbar-width: none;
@@ -121,8 +135,19 @@ body {
   width: 0;
 }
 
+.wrapper .content .paragraph-container h1 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  margin-bottom: 2rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: -2px;
+  background-color: white;
+}
+
 .wrapper .content .paragraph-container .paragraph {
-  display: none;
+  background-color: white;
   height: 70vh;
   max-height: 600px;
   overflow-y: scroll;
